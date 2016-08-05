@@ -1,0 +1,67 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+ 28.42      6.38     6.38                             Train::runDij(Station*, Car*, int, int)
+ 22.76     11.50     5.11                             Vector<Train::stationheap>::operator[](int)
+ 20.49     16.10     4.60                             BinaryHeap<Train::stationheap>::percolateDown(int)
+ 11.09     18.59     2.49                             Train::stationheap::operator<(Train::stationheap const&) const
+  4.34     19.57     0.98                             Train::stationheap::stationheap()
+  3.30     20.31     0.74                             BinaryHeap<Train::stationheap>::insert(Train::stationheap const&)
+  2.09     20.78     0.47                             BinaryHeap<Train::stationheap>::isFull() const
+  1.38     21.09     0.31                             BinaryHeap<Train::stationheap>::deleteMin()
+  0.98     21.31     0.22                             BinaryHeap<Train::stationheap>::isEmpty() const
+  0.98     21.53     0.22                             Vector<Train::stationheap>::operator[](int) const
+  0.82     21.71     0.19                             Train::stationheap::stationheap(int, unsigned int)
+  0.80     21.89     0.18                             BinaryHeap<Train::stationheap>::findMin() const
+  0.58     22.02     0.13                             List<int>::findPrevious(int const&) const
+  0.53     22.14     0.12                             Vector<Train::stationheap>::Vector(int)
+  0.36     22.22     0.08                             Train::run(Car*, Operation*, int*)
+  0.22     22.27     0.05                             Operation::Operation(int, char, short)
+  0.18     22.31     0.04                             Train::findIndexOfMove(Station*, int, int)
+  0.13     22.34     0.03                             ListItr<int>::advance()
+  0.09     22.36     0.02                             checkOperations(Operation*, int, Car*, Station*, int, int)
+  0.09     22.38     0.02                             StackLi<int>::push(int const&)
+  0.09     22.40     0.02                             Vector<Train::stationheap>::size() const
+  0.04     22.41     0.01                             ListItr<int>::ListItr(ListNode<int>*)
+  0.04     22.42     0.01                             StackLi<int>::pop()
+  0.04     22.43     0.01                             StackLi<int>::ListNode::ListNode(int const&, StackLi<int>::ListNode*)
+  0.04     22.44     0.01                             StackLi<int>::makeEmpty()
+  0.04     22.45     0.01                             List<int>::zeroth() const
+  0.04     22.46     0.01                             List<int>::isEmpty() const
+  0.02     22.47     0.01                             StackLi<int>::topAndPop()
+  0.02     22.47     0.01                             StackLi<int>::isEmpty() const
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2014 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
